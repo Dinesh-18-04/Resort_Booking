@@ -1,0 +1,35 @@
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel .slide {
+  margin: 15px 10px; /* Adds spacing between slides */
+  box-sizing: border-box; /* Ensures padding doesn’t expand the element */
+  padding: 20px 10px;  /* Space for top and bottom */
+
+}
+
+.carousel .slider-wrapper {
+  margin-left: -10px; /* Align the first item properly */
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .carousel .slide {
+    width: 100% !important; /* One slide on mobile */
+    margin: 0; /* No margin on mobile */
+  }
+}
+
+/* For larger screens */
+@media (min-width: 769px) {
+  .carousel .slide {
+    width: calc(33.33% - 20px) !important; /* Three slides on larger screens */
+    margin: 0 10px; /* Add horizontal margin for spacing */
+  }
+}
+
+/* Optional: Adjust the carousel container to prevent overflow */
+.carousel {
+  padding: 0 10px; /* Add padding to the carousel container */
+}
